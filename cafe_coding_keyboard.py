@@ -18,11 +18,18 @@ s = ''
 while True:
     if keyboard.read_key():
         s += data[i]
-        print(s)
-        print("\u001B[1A", end="")
+
+        #print(s)
+        #print("\u001B[1A", end="")
+        print('\r' + s, end='')
 
         if data[i] == '\n':
             s = ''
+            #改行後の空白は一気に表示
+            while data[i+1] == ' ':
+                s += data[i+1]
+                i+=1
+            print('\r' + s, end='')
 
         i+=1
 
