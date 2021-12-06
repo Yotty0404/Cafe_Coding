@@ -19,8 +19,6 @@ while True:
     if keyboard.read_key():
         s += data[i]
 
-        #print(s)
-        #print("\u001B[1A", end="")
         print('\r' + s, end='')
 
         if data[i] == '\n':

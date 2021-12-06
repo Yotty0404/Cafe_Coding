@@ -4,10 +4,6 @@ import time
 
 enable()
 
-#for i in range(50):
-#    print('■'*50)
-
-
 # 文字色を黄色に
 print('\033[38;2;200;190;0m',end='')
 # 文字色を初期化して改行
