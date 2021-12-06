@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d949c5c2-3d29-4874-b53c-e7776bc4d618</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Cafe_Coding.py</StartupFile>
+    <StartupFile>cafe_coding_keyboard.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,11 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Cafe_Coding.py" />
+    <Compile Include="cafe_coding_build.py" />
+    <Compile Include="cafe_coding_download.py" />
+    <Compile Include="cafe_coding_keyboard.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
